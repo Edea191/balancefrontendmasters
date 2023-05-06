@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Poppins:ital,wght@1,100&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Expenses chart component</title>
+  
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+
+  <div class="balance">
+  <p>My balance</p>
+  <p>$921.48</p>
+  <img src="./images/logo.svg">
+  </div>
+  
+
+  <div class="math">
+    <span class='spending'>Spending - Last 7 days</span>
+
+    <div class="diagram">
+      <div class="slupek">
+        <p>mon</p>
+        <div id="spup0" onclick="disabled('0')"></div>
+        <input class="number" id="num0" hidden readonly>
+      </div>
+
+      <div class="slupek">
+        <p>tue</p>
+        <div id="spup1" onclick="disabled('1')"></div>
+        <input class="number" id="num1" hidden readonly>
+        
+        
+      </div>
+      
+        <div class="slupek">
+        <p>wed</p>
+        <div id="spup2" onclick="disabled('2')"></div>
+        <input class="number" id="num2" hidden readonly>
+        
+      </div>
+
+      <div class="slupek">
+        <p>thu</p>
+        <div id="spup3" onclick="disabled('3')"></div>
+        <input class="number" id="num3" hidden readonly>
+        
+        
+      </div>
+
+      <div class="slupek">
+        <p>fri</p>
+        <div id="spup4" onclick="disabled('4')"></div>
+        <input class="number" id="num4" hidden readonly>
+      </div>
+
+      <div class="slupek">
+        <p>sat</p>
+        <div id="spup5" onclick="disabled('5')"></div>
+        <input class="number" id="num5" hidden readonly>
+      </div>
+
+      <div class="slupek">
+        <p>sun</p>
+        <div id="spup6" onclick="disabled('6')"></div>
+        <input class="number" id="num6" hidden readonly>
+      </div>
+
+    </div>
+    <hr>
+
+  <div class="sum">
+
+      <div class="total">
+      <p>Total this month</p>
+      <input id="total" readonly>
+      </div>
+
+      <div class="percent">
+      <p>+2.4%</p>
+      <p>from last month</p>
+      </div>
+    </div>
+
+
+</div>
+</main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

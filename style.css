@@ -1,0 +1,165 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Kumbh Sans', sans-serif;
+    
+
+}
+
+body{
+    background-color: hsl(27, 66%, 92%);
+}
+
+main{
+    margin: auto;
+    width: auto;
+    height: auto;
+
+}
+
+.balance{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: hsl(10, 79%, 65%);
+    padding: 10px;
+    gap:10px;
+    color: aliceblue;
+    height: 80px;
+}
+.balance img{
+    margin-top: 20px;
+    align-self: flex-end;
+    width: 60px;
+    height: auto;
+}
+
+.balance p:first-child{
+    font-size: 15px;
+}
+
+.balance p:nth-child(2){
+    font-weight: 700;
+    font-size: 30px;
+}
+
+
+
+.math{
+    background-color: aliceblue;
+    margin-top: 40px;
+}
+
+.balance, .math{
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.diagram{
+    
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+    
+  
+}
+
+.slupek{
+    width: 40px;
+    height: 250px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+   
+}
+
+
+#spup0, #spup1, #spup2, #spup3, #spup4, #spup5, #spup6{  
+    background-color:hsl(10, 79%, 65%);
+    width: 20px;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 10px;
+    
+}
+#spup0:hover, #spup2:hover, #spup3:hover, #spup4:hover, #spup5:hover, #spup6:hover, #spup1:hover{
+    background-color: hsl(27, 66%, 92%) !important;
+    cursor: pointer;
+    
+}
+#spup0:hover + #num0, #spup1:hover + #num1, #spup2:hover + #num2, #spup3:hover + #num3, #spup4:hover + #num4, #spup5:hover + #num5, #spup6:hover + #num6 {
+    display: block;
+}
+
+
+#spup2{
+    height: 200px;
+}
+.number{
+    text-align: center;
+    width: 50px;
+    background-color: black;
+    color: white;
+    border: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.diagram p{
+    text-align: center;
+    margin-top:5px
+}
+
+
+.sum{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.total, .percent{
+    display: flex;
+    flex-direction: column;
+}
+
+.percent{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    justify-content: flex-end;    
+}
+.percent p:first-child{
+    text-align: right;
+}
+
+.percent p:last-child, .total p:first-child{
+    color: hsl(0, 0%, 59%);
+}
+
+.spending{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#total{
+    width: 180px;
+    font-size: 40px;
+    font-weight: 700;
+    border: none;
+    background-color: aliceblue;
+}
+
+
+@media(min-width:400px){
+#spup0, #spup1, #spup2, #spup3, #spup4, #spup5, #spup6{
+width: 40px;
+}
+
+
+main{
+margin-top: 10%;
+max-width: 600px;
+}
+    
+}
