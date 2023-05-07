@@ -12,7 +12,7 @@ This is a solution to the [Frontend Mentor - Single price grid component](https:
 - [Author](#author)
 
 ## Overview
-Chalange from frontendmentor modify to change value 
+Chalange from frontendmentor modified to change value 
 
 ### The challenge
 
@@ -36,13 +36,13 @@ If the expenses are greter than the declared balance, the color will Chalange to
 
 ### Links
 
-- Solution URL: https://github.com/Edea191/single-price-grid
-- Live Site URL: https://edea191.github.io/single-price-grid/
+- Solution URL: https://github.com/Edea191/balancefrontendmasters
+- Live Site URL: https://edea191.github.io/balancefrontendmasters/
 
 ## Built with
 
 - Semantic HTML5
-- CSS3
+- CSS3, Flexbox
 - JavaScript
 
 
