@@ -26,7 +26,7 @@ The remaining balance will be show at the top of the page.
 
 
 -For the second change at setting menu (tap the icon next to balance sheet) we will see the summary of expenses and the percentage change from the previous week.
-If the expenses are greter than the declared balance, the color will Chalange to red.
+If the expenses are greter than the declared balance, the color will changed to red.
 
 
 ### Screenshot
