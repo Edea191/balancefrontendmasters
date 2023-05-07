@@ -21,10 +21,22 @@
 
   <div class="balance">
   <p>My balance</p>
-  <p>$921.48</p>
-  <img src="./images/logo.svg">
+  <input id="myBalance" readonly value="$921.48">
+  <img src="./images/logo.svg" onclick="settings()">
   </div>
-  
+
+
+<div id="settings">
+  <label>balance</label><input class='settingInput' type="number" id="balance">
+  <label>Monday</label><input class='settingInput' type="number" id="monday">
+  <label>Tuesday</label><input class='settingInput' type="number" id="thuesday">
+  <label>Wednesday</label><input class='settingInput' type="number" id="wednesday">
+  <label>Thursday</label><input class='settingInput' type="number" id="thursday">
+  <label>Friday</label><input class='settingInput' type="number" id="friday">
+  <label>Satursday</label><input class='settingInput' type="number" id="satursday">
+  <label>Sunday</label><input class='settingInput' type="number" id="sunday">
+    <button id="submit" onclick="update()">Submit</button>
+</div>
 
   <div class="math">
     <span class='spending'>Spending - Last 7 days</span>
@@ -83,13 +95,13 @@
   <div class="sum">
 
       <div class="total">
-      <p>Total this month</p>
+      <p>Total this week</p>
       <input id="total" readonly>
       </div>
 
       <div class="percent">
-      <p>+2.4%</p>
-      <p>from last month</p>
+      <input id="percent" value="+2.4%" readonly>
+      <p>from last week</p>
       </div>
     </div>
 

@@ -1,26 +1,28 @@
+:root{
+    --submitcolor:hsl(10, 79%, 65%);
+    --bodycolor:hsl(27, 66%, 92%);
+}
+
 *{
     margin: 0px;
     padding: 0px;
     font-family: 'Kumbh Sans', sans-serif;
-    
-
 }
 
 body{
-    background-color: hsl(27, 66%, 92%);
+    background-color: var(--bodycolor)
 }
 
 main{
     margin: auto;
     width: auto;
     height: auto;
-
 }
 
 .balance{
     display: flex;
     flex-flow: column wrap;
-    background-color: hsl(10, 79%, 65%);
+    background-color: var(--submitcolor);
     padding: 10px;
     gap:10px;
     color: aliceblue;
@@ -31,17 +33,26 @@ main{
     align-self: flex-end;
     width: 60px;
     height: auto;
+    cursor: pointer;
 }
 
 .balance p:first-child{
     font-size: 15px;
 }
 
-.balance p:nth-child(2){
+.balance input{
     font-weight: 700;
     font-size: 30px;
+    background-color: var(--submitcolor);
+    border: none;
+    color: aliceblue;
+    width: 120px;
 }
 
+.balance input:focus, #total:focus{
+  
+    outline: none;
+}
 
 
 .math{
@@ -129,12 +140,22 @@ main{
     gap: 0px;
     justify-content: flex-end;    
 }
-.percent p:first-child{
+.percent p{
     text-align: right;
 }
 
-.percent p:last-child, .total p:first-child{
+.total p, .percent p{
     color: hsl(0, 0%, 59%);
+}
+#percent{
+    width: 50px;
+    align-self: flex-end;
+    background-color: aliceblue;
+    text-align: right;
+    border: none;
+}
+#percent:focus{
+    outline: none;
 }
 
 .spending{
@@ -143,13 +164,53 @@ main{
 }
 
 #total{
-    width: 180px;
+    width: 150px;
     font-size: 40px;
     font-weight: 700;
     border: none;
     background-color: aliceblue;
 }
 
+
+
+#settings{
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:absolute;
+    margin: 2% 20%;
+    height: 380px;
+    width: auto;
+    background-color:var(--bodycolor);
+    
+}
+
+.settingInput{
+    text-align: center;
+    color: aliceblue;
+    background-color: black;
+    border-radius: 4px;
+    width: 140px;
+    height: 30px;
+}
+
+#submit{
+    background-color: var(--submitcolor);
+    border: var(--submitcolor);
+    height: 50px;
+    width: 80px;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition:0.3s;
+    
+}
+#submit:hover{
+    cursor: pointer;
+    opacity:0.6;
+    transition:0.3s;
+}
 
 @media(min-width:400px){
 #spup0, #spup1, #spup2, #spup3, #spup4, #spup5, #spup6{
@@ -161,5 +222,19 @@ main{
 margin-top: 10%;
 max-width: 600px;
 }
+
+#settings{
+    margin: 5px 20%;
+    width: 300px;
     
+}
+
+}
+
+@media(min-width:800px){
+    #settings{
+        margin: 5px 8%;
+        
+    }
+
 }
