@@ -1,6 +1,6 @@
 # Frontend Mentor - Single price grid component
 
-This is a solution to the [Frontend Mentor - Single price grid component](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc).
+This is a solution to the [Frontend Mentor - Expenses chart component](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt).
 
 ## Table of contents
 
